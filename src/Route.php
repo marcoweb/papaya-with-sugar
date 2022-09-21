@@ -1,5 +1,5 @@
 <?php
-namespace PapayaWithSugar\Routes;
+namespace PapayaWithSugar;
 
 class Route {
     private ?string $name = null;
@@ -37,5 +37,21 @@ class Route {
 	
 	function setPattern(string $pattern) : void {
 		$this->pattern = $pattern;
+	}
+
+	public static function getRouteOfRequest(string $requestUri) : Route {
+		$requestUri = trim($requestUri, '/');
+		return new Route($requestUri, '', '');
+	}
+
+	public function __construct(string $pattern, string $controllerName, string $actionName, ?string $name = null) {
+		$this->setPattern(pattern: $pattern);
+		$this->setControllerName(controllerName: $controllerName);
+		$this->setActionName(actionName: $actionName);
+		if(is_null($name)) {
+			$this->setName(name: $pattern);	
+		} else {
+			$this->setName(name: $name);
+		}
 	}
 }

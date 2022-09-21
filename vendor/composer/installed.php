@@ -3,7 +3,7 @@
         'name' => 'marcoweb/papaya-with-sugar',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'e164b44b58377015e5b6c505b6e89d932f432127',
+        'reference' => '8274fd37a39838226ca7b0422be182fe8963431d',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'marcoweb/papaya-with-sugar' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'e164b44b58377015e5b6c505b6e89d932f432127',
+            'reference' => '8274fd37a39838226ca7b0422be182fe8963431d',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
