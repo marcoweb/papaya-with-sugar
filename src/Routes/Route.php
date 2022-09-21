@@ -2,10 +2,10 @@
 namespace PapayaWithSugar\Routes;
 
 class Route {
-    private string $name = null;
-    private string $controllerName = null;
-    private string $actionName= null;
-    private string $pattern = null;
+    private ?string $name = null;
+    private ?string $controllerName = null;
+    private ?string $actionName= null;
+    private ?string $pattern = null;
 
 	function getName() {
 		return $this->name;
