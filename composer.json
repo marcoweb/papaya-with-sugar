@@ -1,0 +1,9 @@
+{
+    "name": "marcoweb/papaya-with-sugar",
+    "description": "Simple PHP Framework",
+    "autoload": {
+        "psr-4": {
+            "PapayaWithSugar\\" : "src/"
+        }
+    }
+}
